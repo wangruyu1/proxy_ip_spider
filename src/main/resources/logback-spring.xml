@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	<logger name="org.springframework.web" level="INFO" />
+	<!-- <springProfile name="dev"> <logger name="org.springboot.sample" level="DEBUG" 
+		/> </springProfile> -->
+	<!-- <appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+		<File>/data/log/app.log</File> <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+		daily rollover <FileNamePattern>rest-demo.%d{yyyy-MM-dd}.log</FileNamePattern> 
+		keep 30 days' worth of history <maxHistory>30</maxHistory> </rollingPolicy> 
+		<encoder> <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg 
+		%n</Pattern> </encoder> </appender> -->
+
+	<!-- <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>.%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg %n
+			</Pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+	</appender> -->
+	<logger name="com.boot.proxyip.mapper" level="DEBUG"></logger>
+	<logger name="org.apache.http.impl.conn" level="OFF"></logger>
+
+</configuration>
